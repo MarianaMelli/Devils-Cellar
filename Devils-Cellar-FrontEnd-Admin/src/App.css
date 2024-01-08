@@ -1,0 +1,30 @@
+.dashboard-container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.admin-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.admin-navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.admin-avatar {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}

@@ -1,0 +1,60 @@
+.dashboard-forms {
+  height: 100vh;
+  margin-left: 200px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+.dashboard-forms::-webkit-scrollbar {
+  display: none;
+}
+.admin-form {
+  background: transparent;
+}
+
+.product-form {
+  background: transparent;
+}
+
+.form-container {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.628);
+  animation: slide-in 0.5s ease-out;
+  color: orangered;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.forms-header {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+}
+.forms-button {
+  margin-top: 1rem;
+  padding: 10px;
+  font-weight: 700;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: transparent;
+  color: orangered;
+  border: solid orangered 3px;
+}
+
+.profile-avatar {
+  width: 60px;
+  border-radius: 50%;
+}

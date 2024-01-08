@@ -1,0 +1,7 @@
+.UserDeleteToast-container {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  z-index: 1000;
+  font-family: Cinzel;
+}
