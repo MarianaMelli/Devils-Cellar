@@ -1,0 +1,203 @@
+.banner-my-orders {
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: calc(100vh - 100px);
+  min-height: 610px;
+  max-height: 984px;
+}
+.no-orders-yet-container {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+.no-orders-yet {
+  text-align: center;
+  font-size: 4rem;
+}
+.lets-shop-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: orangered;
+  font-size: 2rem;
+}
+.lets-shop-link:hover {
+  text-decoration: underline;
+}
+.my-orders-container {
+  padding-top: 8rem;
+}
+.info-text-my-orders {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(11, 11, 11, 0.8);
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 90px 15%;
+  font-size: 40px;
+  min-width: 70%;
+}
+
+.title-my-orders {
+  color: #ff5507;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+.order-accordion {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.order-accordion-header {
+  margin: 10px;
+  font-size: 1.3rem;
+}
+
+.order-history {
+  color: whitesmoke;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.order {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: solid 0.02rem rgb(199, 199, 199);
+  border-radius: 0.5rem;
+  padding: 30px;
+}
+.order-summary {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  width: 100%;
+}
+.order-summary h3 {
+  font-size: 1.2rem;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.order-highligth-text {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.order-product-details {
+  text-align: center;
+  max-height: 50vh;
+  font-size: 1rem;
+}
+.order-product-list {
+  list-style: none;
+  padding-left: 0;
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.order-product-list::-webkit-scrollbar {
+  width: 10px;
+}
+.order-product-list::-webkit-scrollbar-track {
+  background: rgb(219, 219, 219);
+  border-radius: 10px;
+}
+.order-product-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: orangered;
+}
+.order-product {
+  padding: 2rem;
+}
+
+.order-img-container {
+  text-align: center;
+}
+
+.order-img {
+  width: 25%;
+}
+
+.order-product-name {
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
+.order-product-price-qty {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.order-btns {
+  margin-top: 10px;
+  text-decoration: none;
+  color: orangered;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.buy-again-btn {
+  background-color: transparent;
+  color: orangered;
+  padding: 0;
+  margin-left: 5%;
+}
+.buy-again-btn:hover {
+  background-color: transparent;
+}
+@media (max-width: 720px) {
+  .my-orders-container {
+    padding-top: 6rem;
+  }
+  .order-accordion-header {
+    font-size: 0.8rem;
+  }
+  .order {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .order-summary {
+    width: 95%;
+  }
+  .order-product-details {
+    width: 95%;
+  }
+  .order-btns {
+    margin-bottom: 20px;
+  }
+  .info-text-my-orders {
+    min-width: 100%;
+  }
+  .order-summary h3 {
+    font-size: 0.91rem;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .order-highligth-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}

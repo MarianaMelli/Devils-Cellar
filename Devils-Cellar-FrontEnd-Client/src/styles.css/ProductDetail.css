@@ -1,0 +1,200 @@
+.bg-currentProduct {
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: calc(100vh - 100px);
+  min-height: 610px;
+  max-height: 984px;
+}
+
+.info-text-currentProduct {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(11, 11, 11, 0.8);
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 90px 15%;
+  font-size: 40px;
+  min-width: 70%;
+}
+
+.title-currentProduct {
+  color: #ff5507;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 2.8rem;
+}
+
+.text-currentProduct {
+  color: #f7f5f0;
+  line-height: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-top: 2%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .info-text-currentProduct {
+    padding: 20px;
+    min-width: 100%;
+  }
+}
+
+@media (max-height: 650px) {
+  .info-text-currentProduct {
+    padding: 50px 15%;
+  }
+}
+
+/* Container */
+
+.product-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-productDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh 5vh 3vh 5vh;
+  padding: 10% 0;
+}
+
+.productDetails {
+  color: white;
+  background-color: transparent;
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.img-bottle {
+  height: 90vh;
+}
+
+.textDetails {
+  display: flex;
+  justify-content: center;
+  padding: 5% 5%;
+  flex-direction: column;
+  max-width: 100%;
+  font-size: 1.3rem;
+}
+
+.description {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.product-category {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  margin-top: 5%;
+}
+
+.price {
+  margin-top: 3%;
+  font-weight: 600;
+}
+
+.box-button {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.product-button {
+  text-align: center;
+  width: 50%;
+  transition: transform 450ms;
+}
+
+.product-button:hover {
+  transform: scale(1.1);
+}
+
+.box-our-Wines-Link {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.our-Wines-Link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+.our-Wines-Link:hover {
+  color: orangered;
+}
+
+.also-like {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  color: whitesmoke;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.8rem;
+  max-width: 90vh;
+}
+
+@media (max-width: 900px) {
+  .productDetails {
+    flex-direction: column;
+  }
+  .img-bottle {
+    height: 50vh;
+    object-fit: contain;
+    margin-top: 20vh;
+  }
+}
+
+@media (max-width: 760px) {
+  .img-bottle {
+    margin-top: 30vh;
+  }
+  .description {
+    text-align: left;
+    margin-top: 5vh;
+  }
+  .box-button {
+    justify-content: center;
+  }
+  .product-button {
+    width: 70%;
+  }
+  .also-like {
+    margin-top: 30vh;
+  }
+}
+@media (max-width: 540px) {
+  .also-like {
+    width: 100%;
+  }
+  .textDetails {
+    padding: 2% 2%;
+    font-size: 1.3rem;
+  }
+  .box-productDetails {
+    margin: 3vh 5vh 3vh 5vh;
+    padding: 5% 0;
+  }
+}

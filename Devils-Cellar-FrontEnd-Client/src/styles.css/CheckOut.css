@@ -1,0 +1,257 @@
+.checkout {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.banner-checkout {
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: calc(100vh - 100px);
+  min-height: 610px;
+  max-height: 984px;
+  opacity: 0.8;
+}
+
+.info-text-checkout {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(11, 11, 11, 0.8);
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 90px 15%;
+  font-size: 40px;
+  min-width: 70%;
+}
+
+.title-checkout {
+  color: #ff5507;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+.checkout-information {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #171717;
+  padding: 40px;
+  border-radius: 1rem;
+  border: solid 0.02rem whitesmoke;
+}
+.checkout-information-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: whitesmoke;
+}
+
+.checkout-labels {
+  font-size: 1.2rem;
+}
+.payment-section {
+  border-top: solid 0.02rem whitesmoke;
+  padding-top: 20px;
+}
+.checkout-information-section h3 {
+  font-size: 1.2rem;
+}
+
+.checkout-headers {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected-payment {
+  padding-top: 1rem;
+}
+.card-identificatiton {
+  display: flex;
+  gap: 10px;
+}
+
+.card-identificatiton .card-number,
+.card-holder {
+  width: 50%;
+}
+
+.mercado-pago-paypal-btn {
+  width: 70%;
+  background-color: transparent;
+  outline: solid 2px orangered;
+}
+
+.check-order-container {
+  width: 45%;
+  height: 100%;
+  color: whitesmoke;
+  background-color: #171717;
+  padding: 40px;
+  border-radius: 1rem;
+  border: solid 0.02rem whitesmoke;
+}
+.checkout-order-header {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.check-scrollable {
+  overflow-y: scroll;
+  height: 40vh;
+  border-bottom: solid 0.02rem whitesmoke;
+}
+.check-order-product-list {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.check-scrollable::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+.check-scrollable::-webkit-scrollbar-track {
+  background: rgb(219, 219, 219);
+  border-radius: 10px;
+}
+.check-scrollable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: orangered;
+}
+.check-order-product-list li {
+  display: flex;
+  width: 95%;
+  margin-bottom: 40px;
+}
+.check-order-img {
+  width: 40px;
+  object-fit: contain;
+}
+.check-order-product-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px 0 15px 15px;
+  font-size: 1.2rem;
+}
+.check-order-product-detail-specifics {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.check-order-payment-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 40px;
+  font-size: 1.2rem;
+}
+.check-order-payment {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-payment {
+  border-top: solid 0.02rem whitesmoke;
+  padding-top: 20px;
+}
+
+.confirm-order-btn {
+  width: 100%;
+  border: solid 3px orangered;
+  color: whitesmoke;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bolder;
+  background-color: transparent;
+}
+
+.confirm-order-btn:hover {
+  background-color: orangered;
+  color: whitesmoke;
+}
+
+@media (max-width: 900px) {
+  .checkout {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .checkout-information {
+    width: 95%;
+  }
+  .checkout-information-section {
+    text-align: start;
+  }
+  .checkout-information-section h3 {
+    font-size: 1.3rem;
+  }
+  .check-order-container {
+    width: 95%;
+  }
+  .checkout-headers {
+    font-size: 1.7rem;
+  }
+  .checkout-order-header {
+    font-size: 1.7rem;
+  }
+  .check-order-product-detail {
+    font-size: 1.3rem;
+  }
+  .check-order-payment-summary {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 720px) {
+  .info-text-checkout {
+    min-width: 100%;
+  }
+  .checkout-information-section h3 {
+    font-size: 1.1rem;
+  }
+  .check-order-container {
+    width: 95%;
+  }
+  .checkout-headers {
+    font-size: 1.4rem;
+  }
+  .checkout-order-header {
+    font-size: 1.4rem;
+  }
+  .check-order-product-detail {
+    font-size: 1.1rem;
+  }
+  .check-order-payment-summary {
+    font-size: 1.1rem;
+  }
+  .card-identificatiton {
+    flex-direction: column;
+  }
+  .card-identificatiton .card-number,
+  .card-holder {
+    width: 100%;
+  }
+  .mercado-pago-paypal-btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}

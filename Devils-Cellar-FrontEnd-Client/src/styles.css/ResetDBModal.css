@@ -1,0 +1,70 @@
+.modal-open {
+  padding-right: 0;
+}
+
+.modalreset-container .modal-dialog {
+  z-index: 100;
+  margin-top: 150px;
+}
+
+.contact-body {
+  padding: 3%;
+}
+
+.btn-box-resetdb {
+  display: flex;
+  justify-content: end;
+}
+
+.resetdb-btn {
+  border: solid 3px orangered;
+  color: orangered;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  margin-top: 5%;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: white;
+  display: inline;
+  width: 20%;
+}
+
+.reset-btn {
+  margin-right: 2%;
+}
+
+.resetdb-btn:hover {
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .resetdb-btn {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .resetdb-btn {
+    width: 50%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 340px) {
+  .btn-box-resetdb {
+    flex-direction: column;
+  }
+  .resetdb-btn {
+    width: 100%;
+  }
+  .reset-btn {
+    margin-right: 0;
+  }
+  .close-reset-btn {
+    margin-top: 2%;
+  }
+}

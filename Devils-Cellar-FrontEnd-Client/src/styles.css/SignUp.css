@@ -1,0 +1,88 @@
+.principal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.sign-up-logo {
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.container-signup {
+  width: 60vh;
+  margin-top: 245px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: slide-in 0.5s ease-out;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6600;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+.titulo {
+  color: #ff6600;
+}
+.formulario {
+  margin-top: 5%;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .container-signup {
+    width: 40vh;
+    padding: 10px 40px;
+  }
+  .sign-up-logo {
+    left: 80px;
+  }
+}

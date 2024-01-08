@@ -1,0 +1,19 @@
+.footerToast-container {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  z-index: 1000;
+  font-family: Cinzel;
+}
+
+.newsletter-btn {
+  width: 40%;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .footerToast-container {
+    left: auto;
+    right: auto;
+  }
+}

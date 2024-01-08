@@ -1,0 +1,24 @@
+.modal-open {
+  padding-right: 0;
+}
+
+.modal-contact-container {
+  width: 100vh;
+}
+
+.contact-body {
+  padding: 3%;
+}
+
+.about-this-proyect-contact-btn {
+  border: solid 3px orangered;
+  color: orangered;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-top: 5%;
+  font-weight: 700;
+  cursor: pointer;
+}

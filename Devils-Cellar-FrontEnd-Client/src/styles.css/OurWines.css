@@ -1,0 +1,166 @@
+.bg-ourwines {
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: calc(100vh - 100px);
+  min-height: 610px;
+  max-height: 984px;
+}
+
+.info-text-ourwines {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(11, 11, 11, 0.8);
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 90px 15%;
+  font-size: 40px;
+  min-width: 70%;
+}
+
+.title-ourwines {
+  color: #ff5507;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+.text-ourwines {
+  color: #f7f5f0;
+  line-height: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-top: 2%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.ourwines-container {
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+  margin: 8% 15%;
+}
+
+.type {
+  cursor: pointer;
+  margin: 2px;
+}
+
+.type:hover {
+  color: #ff5507;
+}
+
+@media (max-width: 768px) {
+  .info-text-ourwines {
+    padding: 20px;
+    min-width: 100%;
+  }
+  .ourwines-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-height: 650px) {
+  .info-text-ourwines {
+    padding: 50px 15%;
+  }
+}
+
+/* carrousel */
+
+.carrousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.products-carrousel {
+  display: flex;
+  margin-top: 15vh;
+  overflow-x: scroll;
+  margin-left: 20vh;
+  margin-right: 20vh;
+}
+
+.products-carrousel::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+.products-carrousel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.products-carrousel::-webkit-scrollbar-thumb {
+  background: orangered;
+  border-radius: 10px;
+}
+
+.img-name-container {
+  height: 100%;
+  display: block;
+  width: 100%;
+  height: 75%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin: 3vh;
+}
+
+.img-container {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img-our-wines {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  height: 40vh;
+  width: auto;
+}
+
+.wine-name {
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.box-home-Link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.home-Link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+.home-Link:hover {
+  color: orangered;
+}

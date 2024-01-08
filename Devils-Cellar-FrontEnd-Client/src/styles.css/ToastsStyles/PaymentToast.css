@@ -1,0 +1,14 @@
+.PaymentToast-container {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  z-index: 1000;
+  font-family: Cinzel;
+}
+
+@media (max-width: 576px) {
+  .PaymentToast-container {
+    left: auto;
+    right: auto;
+  }
+}
